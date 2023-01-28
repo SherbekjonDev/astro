@@ -1,0 +1,62 @@
+<div class="w-[100%] h-[32px] flex items-center justify-center bg-[#20232a]">
+  <a
+    class="text-white text-sm focus:outline-none focus:border-b-2"
+    href="https://jasurbek-shomaqsudov.vercel.app"
+    target="_blank">View My Portfolio site &#x2192;</a
+  >
+</div>
+<nav>
+  <div class="container">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/basket">Store</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style lang="scss">
+  nav {
+    position: sticky;
+    top: 0px;
+    margin-bottom: 40px;
+    padding: 10px 0px;
+    background: rgba(128, 47, 110, 0.692);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(128, 47, 110, 0.452);
+    z-index: 100;
+
+    .container {
+      margin: 0 auto;
+      padding: 0px 16px;
+      max-width: 1100px;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 46px;
+
+        li {
+          list-style: none;
+
+          a {
+            font-weight: 600;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0);
+            transition: 300ms;
+
+            &:focus,
+            &:hover {
+              outline: none;
+              border-bottom: 2px solid rgb(255, 255, 255);
+            }
+          }
+        }
+      }
+    }
+  }
+</style>
